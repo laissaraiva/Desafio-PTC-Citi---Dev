@@ -17,27 +17,26 @@ body {
 
 
 header {
-    /* 3. Cor da barra de cima */
     background: #ffffff; 
-    color: #333; /* Cor do texto escura */
-    padding: 15px 10%; /* Adiciona padding nas laterais */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+    color: #333;
+    padding: 15px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 100%;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    box-sizing: border-box;
 }
 
 .header-content {
-    display: flex; /* Alinha itens lado a lado */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    align-items: center;
 }
 
-/* 1. Estilo para a LOGO */
+
 header img {
-    height: 45px; /* Altura da logo */
-    margin-right: 20px; /* Espaço entre a logo e o nome */
+    height: 45px; 
+    margin-right: 20px; 
 }
 
-/* 2. Estilo para o NOME */
+
 header h1 {
     margin: 0;
     font-size: 1.8em;
@@ -65,9 +64,9 @@ ul li {
     padding: 5px 0;
 }
 
-/* ===== 4. ESTILOS PARA OS BOTÕES ===== */
+
 .social-buttons {
-    text-align: center; /* Centraliza a div dos botões */
+    text-align: center; 
     margin-top: 20px;
 }
 
@@ -83,10 +82,10 @@ ul li {
 }
 
 .button:hover {
-    transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
+    transform: scale(1.05); 
 }
 
-/* Cores específicas para cada botão */
+
 .button.linkedin {
     background-color: #0077b5;
 }
@@ -108,8 +107,8 @@ footer {
 
 
 .profile-picture-container {
-    text-align: center; /* Centraliza a imagem horizontalmente */
-    margin: 25px 0;   /* Adiciona um espaço em cima e embaixo da foto */
+    text-align: center;
+    margin: 25px 0;
 }
 
 .profile-picture {
@@ -124,48 +123,54 @@ footer {
 
 
 .bloco-dividido {
-    display: flex; /* A mágica do layout lado a lado */
-    align-items: center; /* Alinha o texto e a imagem verticalmente */
-    gap: 30px; /* Espaço entre o texto e a imagem */
-    margin-top: 30px; /* Espaço acima de cada bloco */
-    margin-bottom: 30px; /* Espaço abaixo de cada bloco */
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+    margin-bottom: 30px; 
 }
 
-/* O bloco de texto (flex: 1) e o bloco de imagem (flex: 1) 
-   vão dividir o espaço igualmente (50% para cada) */
 
 .bloco-texto {
-    flex: 1; /* Faz o texto ocupar metade do espaço */
+    flex: 1; 
 }
 
 .bloco-imagem {
-    flex: 1; /* Faz a imagem ocupar a outra metade */
+    flex: 1; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    min-height: 200px;
 }
 
 .bloco-imagem img {
-    width: 40%; /* Faz a imagem preencher seu container */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Borda arredondada (opcional) */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra (opcional) */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
-/* Classe "reverso" para inverter a ordem (imagem-texto) */
+
 .bloco-dividido.reverso {
-    flex-direction: row-reverse; /* Inverte a ordem dos flex-items */
+    flex-direction: row-reverse; 
 }
 
 
-/* ========== RESPONSIVIDADE PARA CELULARES ========== */
 
-/* Quando a tela for menor que 768px (tablets/celulares) */
+
+
 @media (max-width: 768px) {
     .bloco-dividido {
-        flex-direction: column; /* Coloca os blocos um em cima do outro */
-        gap: 15px; /* Diminui o espaço */
+        flex-direction: column; 
+        gap: 15px; 
     }
     
-    /* No celular, queremos que a ordem seja sempre texto-imagem */
+    
     .bloco-dividido.reverso {
-        flex-direction: column; /* Remove o efeito reverso */
+        flex-direction: column;
     }
 }
