@@ -1,63 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página Pessoal de Laís Saraiva</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal de Laís Saraiva</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
     <header>
-        <img src="./assets/profile.jpeg" alt="Profile Picture" class="profile-picture"/>
-        <a href="./profile.html" target="_blank" class="about-me-link">
-            <p class="about-me"> Laís Saraiva </p>
-        </a>
-        <h1>Minhas Recomendações </h1>
-        <div class="nav-links">
-            <a href="#movie" class="button">Filme</a>
-            <a href="#music" class="button">Música</a>
-            <a href="#book" class="button">Livro</a>
+        <div class="header-content">
+            <img src="assets/logo-cin.png" alt="Logo do CIn-UFPE">
+            
+            <h1>Laís Saraiva</h1>
         </div>
     </header>
-        
-    <body>
-        
-        <div>
 
-            <div id="movie">
-                <h1>La La Land</h1>
-                <img src="./assets/la-la-land.jpg" alt="La La Land Movie Poster"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, adipisci. Ipsa maxime molestiae tempore, nihil iste impedit officia laudantium, odit perferendis quibusdam id voluptatibus cupiditate earum quos. Temporibus, ex laborum delectus vel aut facilis, aliquid aspernatur minus quisquam modi quidem, reiciendis accusantium? Officiis at dignissimos, rem debitis eaque veritatis hic optio quod, dolore, dolores fugit? Consequuntur molestiae temporibus reiciendis quibusdam, doloribus fugiat nihil, deserunt exercitationem repellendus incidunt sapiente amet atque reprehenderit, voluptas excepturi? Atque illum omnis explicabo nesciunt veniam distinctio commodi sit, voluptates provident ipsa, ipsam placeat vero laboriosam recusandae unde obcaecati quos. Libero dolores aliquam temporibus minus fugit error ad quae fugiat laborum sed adipisci, quasi iste eveniet quaerat.</p>
-            </div>
+    <div class="container">
+        <div class="content">
+            <p class="saudacao">Olá, Visitante! Bem-vindo(a) à minha página.</p>
+            <div class="profile-picture-container">
+                <img src="assets/foto-lais.JPG" alt="Foto de perfil de Lais" class="profile-picture">
 
-            <div id="music">
-                <h1 >The Fate of Ophelia</h1>
-                <img src="./assets/the-fate-of-ophelia.jpg" alt="The Life of a Show Girl Cover"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, adipisci. Ipsa maxime molestiae tempore, nihil iste impedit officia laudantium, odit perferendis quibusdam id voluptatibus cupiditate earum quos. Temporibus, ex laborum delectus vel aut facilis, aliquid aspernatur minus quisquam modi quidem, reiciendis accusantium? Officiis at dignissimos, rem debitis eaque veritatis hic optio quod, dolore, dolores fugit? Consequuntur molestiae temporibus reiciendis quibusdam, doloribus fugiat nihil, deserunt exercitationem repellendus incidunt sapiente amet atque reprehenderit, voluptas excepturi? Atque illum omnis explicabo nesciunt veniam distinctio commodi sit, voluptates provident ipsa, ipsam placeat vero laboriosam recusandae unde obcaecati quos. Libero dolores aliquam temporibus minus fugit error ad quae fugiat laborum sed adipisci, quasi iste eveniet quaerat.</p>
-            </div>
+            <section id="sobre-mim">
+                <h2>Sobre Mim</h2>
+                <p>Sou estudante de Sistemas de Informação no Centro de Informática (CIn) da UFPE. Estou no 2º período e tenho grande interesse por Desenvolvimento Web, Desing e Dados.</p>
+            </section>
 
-            <div id="book">
-                <h1>A Menina Que Roubava Livros</h1>
-                <img src="./assets/the-book-thief.jpg" alt="The Thief Cover"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, adipisci. Ipsa maxime molestiae tempore, nihil iste impedit officia laudantium, odit perferendis quibusdam id voluptatibus cupiditate earum quos. Temporibus, ex laborum delectus vel aut facilis, aliquid aspernatur minus quisquam modi quidem, reiciendis accusantium? Officiis at dignissimos, rem debitis eaque veritatis hic optio quod, dolore, dolores fugit? Consequuntur molestiae temporibus reiciendis quibusdam, doloribus fugiat nihil, deserunt exercitationem repellendus incidunt sapiente amet atque reprehenderit, voluptas excepturi? Atque illum omnis explicabo nesciunt veniam distinctio commodi sit, voluptates provident ipsa, ipsam placeat vero laboriosam recusandae unde obcaecati quos. Libero dolores aliquam temporibus minus fugit error ad quae fugiat laborum sed adipisci, quasi iste eveniet quaerat.</p>
-            </div>
+            <section id="interesses">
+                <h2>Meus Interesses</h2>
+                <ul>
+                    <li>Desenvolvimento Web</li>
+                    <li>Design de Interfaces</li>
+                    <li>Análise de Dados</li>
+                </ul>
+            </section>
 
+            <section id="contato">
+                <h2>Contato</h2>
+                <div class="social-buttons">
+                    <a href="https://www.linkedin.com/in/la%C3%ADs-saraiva-b35b9b377/" target="_blank" class="button linkedin">LinkedIn</a>
+                    <a href="https://github.com/laissaraiva" target="_blank" class="button github">GitHub</a>
+                    <a href="mailto:lspc@cin.ufpe.br" class="button email">E-mail</a>
+                </div>
+            </section>
         </div>
-    </body>
+    </div>
 
     <footer>
-        <a href="https://www.instagram.com/citiufpe/" target="_blank" class="footer-link">
-            <h1>@citiufpe</h1>
-        </a>
-        
-        <img src="./assets/instagram-logo.png" alt="Instagram Logo"/>
-
-        <a href="https://www.instagram.com/eusouociti/" target="_blank" class="footer-link">
-            <h1>@eusouociti</h1>
-        </a>
+        <p>Página criada para o Desafio de Dev - PTC Citi - &copy; 2025</p>
     </footer>
+
+</body>
 </html>
