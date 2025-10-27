@@ -5,4 +5,4 @@
 
 
 ## Aspirante:
-Laís Saraiva Peixoto Costa - lspc@cin.ufpe.br/lais.saraiva@ufpe.br
+Laís Saraiva Peixoto Costa - lspc@cin.ufpe.br | lais.saraiva@ufpe.br
